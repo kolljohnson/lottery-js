@@ -18,8 +18,7 @@ export default class Main {
 	    for(let j = 1; j < this.balls.length; j++) {
 		if(this.balls[i] > this.balls[j]) {
 		    let ballI = this.balls[i];
-		    let ballJ = this.balls[j];
-		    this.balls[i] = ballJ;
+		    this.balls[i] = this.balls[j];
 		    this.balls[j] = ballI;
 		}
 	    }
