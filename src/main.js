@@ -5,4 +5,8 @@ export default class Main {
     constructor() {
 	this.balls = [];
     }
+
+    add(ball) {
+	this.balls.push(ball);
+    }
 }
