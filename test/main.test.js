@@ -9,6 +9,6 @@ describe('Main', () => {
 
     it('balls should initialize as an empty list', () => {
 	let rack = new Main();
-	expect(rack.balls)).to.equal([]);
+	expect(rack.balls).to.eql([]);
     });
 });
