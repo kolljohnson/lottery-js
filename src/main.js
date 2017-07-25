@@ -6,7 +6,7 @@ export default class Main {
 	this.balls = [];
     }
 
-    add(ball) {
+    add(ball: number) {
 	this.balls.push(ball);
     }
 }
