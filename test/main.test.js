@@ -21,4 +21,10 @@ describe('Main', () => {
 	rack.add(20);
 	expect(rack.balls).to.eql([20]);
     });
+
+    it('balls is [10, 20] after adding 20 and 10', () => {
+	rack.add(20);
+	rack.add(10);
+	expect(rack.balls).to.eql([10, 20]);
+    });
 });
