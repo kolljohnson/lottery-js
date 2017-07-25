@@ -8,5 +8,21 @@ export default class Main {
 
     add(ball: number) {
 	this.balls.push(ball);
+	if(this.balls.length > 1) {
+	    this.ballSort();
+	}
+    }
+
+    ballSort() {
+	for (let i = 0; i < this.balls.length - 1; i++) {
+	    for(let j = 1; j < this.balls.length; j++) {
+		if(this.balls[i] > this.balls[j]) {
+		    let ballI = this.balls[i];
+		    let ballJ = this.balls[j];
+		    this.balls[i] = ballJ;
+		    this.balls[j] = ballI;
+		}
+	    }
+	}
     }
 }
